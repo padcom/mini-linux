@@ -2,9 +2,6 @@
 mount -t proc none /proc
 mount -t sysfs none /sys
 
-cat <<!
-boot took $(cut -d' ' -f1 /proc/uptime) seconds
-Welcome to padcom-vm
-!
+echo Welcome to padcom-vm
 
 exec /bin/sh
