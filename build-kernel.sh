@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd linux-5.18.2
+cd linux
 make clean
 make menuconfig
 make -j $(nproc)

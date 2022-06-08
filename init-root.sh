@@ -1,8 +1,9 @@
 #!/bin/sh -e
 
 tar -xjf busybox-1.35.0.tar.bz2
+ln -s busybox-1.35.0 busybox
 
-cp busybox.config busybox-1.35.0/.config
+cp busybox.config busybox/.config
 
 mkdir root
 cd root

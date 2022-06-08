@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd busybox-1.35.0
+cd busybox
 make menuconfig
 make -j $(nproc)
 make install
@@ -9,7 +9,7 @@ cd ../root
 
 mkdir -p dev etc proc sys
 
-cp -a ../busybox-1.35.0/_install/* .
+cp -a ../busybox/_install/* .
 rm ../initramfs.cpio.gz
 find . -print0 | cpio --null -ov --format=newc | bzip2 > ../initramfs.cpio.bz2
 
