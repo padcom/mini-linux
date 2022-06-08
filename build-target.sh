@@ -5,7 +5,7 @@ make menuconfig
 make -j $(nproc)
 make install
 
-cd ../root
+cd ../target
 
 mkdir -p dev etc proc sys
 
