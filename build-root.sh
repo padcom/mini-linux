@@ -11,6 +11,6 @@ mkdir -p dev etc proc sys
 
 cp -a ../busybox-1.35.0/_install/* .
 rm ../initramfs.cpio.gz
-find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../initramfs.cpio.gz
+find . -print0 | cpio --null -ov --format=newc | bzip2 > ../initramfs.cpio.bz2
 
 cd ..

@@ -1,4 +1,4 @@
 linux-*
 busybox-*
 root
-initramfs.cpio.gz
+initramfs.cpio.*
