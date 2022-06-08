@@ -1,0 +1,4 @@
+linux-*
+busybox-*
+root
+initramfs.cpio.gz
