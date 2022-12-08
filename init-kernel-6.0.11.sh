@@ -12,6 +12,6 @@ cd linux
 make allnoconfig
 cd ..
 git apply kernel-6.0.11.config.patch
-#git apply kernel-6.0.11.config.net.patch
+git apply kernel-6.0.11.config.net.patch
 
 ./build-kernel.sh
