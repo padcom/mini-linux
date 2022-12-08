@@ -1,8 +1,7 @@
 #!/bin/sh
-mount -t proc none /proc
-mount -t sysfs none /sys
 
-ifconfig eth0 10.0.2.10 netmask 255.255.255.0 up
-route add default gw 10.0.2.2
+# Mount all filesystems defined in /etc/fstab
+mount -a
 
-echo Welcome to padcom-vm
+# Say hello to the user
+echo Welcome to padcom-vm!
