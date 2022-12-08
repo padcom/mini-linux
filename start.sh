@@ -7,5 +7,6 @@ qemu-system-x86_64 \
   -no-reboot \
   -nographic \
   -enable-kvm \
+  -m 37M \
   -device e1000,netdev=net0 \
   -netdev user,id=net0,hostfwd=tcp::5555-:22
