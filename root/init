@@ -1,7 +1,0 @@
-#!/bin/sh
-mount -t proc none /proc
-mount -t sysfs none /sys
-
-echo Welcome to padcom-vm
-
-exec /bin/sh
